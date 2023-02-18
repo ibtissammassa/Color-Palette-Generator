@@ -1,0 +1,33 @@
+@import url("https://fonts.cdnfonts.com/css/poppins");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  background: #e0fff6;
+}
+body .container {
+  display: flex;
+  justify-content: center;
+}
+body .container .color {
+  background-color: #73ffd7;
+  border-radius: 6px;
+  padding: 8px;
+  margin: 8px;
+  list-style: none;
+  text-align: center;
+}
+body .container .color .color-box {
+  height: 140px;
+  width: 120px;
+  background-color: #ffcb7d;
+  border-radius: 6px;
+}
+body .container .color .hex-value {
+  display: block;
+  margin: 7px 5px;
+}/*# sourceMappingURL=style.css.map */
