@@ -47,16 +47,20 @@ body{
             }
         }
     }
-    .button {
+    .generate {
+        margin: 40px auto;
         background-color: #2f6e5e;
-        display: flex;
-        justify-content: center;
-        width: fit-content;
         border-radius: 45px;
-        .generate {
+        display: flex;
+        // svg {
+        //     fill:rgb(216, 216, 216);
+        //     height: 50px;
+        //     padding: 10px;
+        // }
+        p {
             font-size: 30px;
             color: #e0fff6;
-            padding: 20px 30px 20px 80px;
+            padding: 20px 30px 20px 90px;
             font-weight: 500;
         }
     }
