@@ -9,10 +9,25 @@
 body {
   background: #e0fff6;
 }
-body .container {
-  display: flex;
+body .text h1 {
+  display: block;
+  margin: 40px 100px 0px;
+  text-align: center;
+  padding: 10px;
+  font-size: 35px;
 }
-body .container .color {
+body .text h2 {
+  display: block;
+  margin: 0px 0px 40px;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+}
+body .Palettes ul {
+  display: flex;
+  justify-content: center;
+}
+body .Palettes ul .color {
   background-color: #73ffd7;
   border-radius: 6px;
   padding: 8px;
@@ -20,13 +35,27 @@ body .container .color {
   list-style: none;
   text-align: center;
 }
-body .container .color .color-box {
+body .Palettes ul .color .color-box {
   height: 140px;
   width: 120px;
   background-color: #ffcb7d;
   border-radius: 6px;
 }
-body .container .color .hex-value {
+body .Palettes ul .color .hex-value {
   display: block;
   margin: 7px 5px;
+}
+body .button {
+  background-color: #2f6e5e;
+  display: flex;
+  justify-content: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 45px;
+}
+body .button .generate {
+  font-size: 30px;
+  color: #e0fff6;
+  padding: 20px 30px 20px 80px;
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */
