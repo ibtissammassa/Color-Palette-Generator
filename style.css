@@ -23,25 +23,33 @@ body .text h2 {
   text-align: center;
   font-size: 30px;
 }
-body .Palettes ul {
+body .palettes {
   display: flex;
   justify-content: center;
 }
-body .Palettes ul .color {
+body .palettes .color:hover {
+  transform: scale(1.05);
+}
+body .palettes .color:active {
+  transform: scale(1);
+}
+body .palettes .color {
   background-color: #73ffd7;
   border-radius: 6px;
   padding: 8px;
   margin: 8px;
   list-style: none;
   text-align: center;
+  cursor: pointer;
+  transition: 0.5s ease;
 }
-body .Palettes ul .color .color-box {
+body .palettes .color .color-box {
   height: 140px;
   width: 120px;
   background-color: #ffcb7d;
   border-radius: 6px;
 }
-body .Palettes ul .color .hex-value {
+body .palettes .color .hex-value {
   display: block;
   margin: 7px 5px;
 }
@@ -50,10 +58,18 @@ body .generate {
   background-color: #2f6e5e;
   border-radius: 45px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+body .generate img {
+  padding: 10px;
+  padding-left: 30px;
+  height: 60px;
 }
 body .generate p {
   font-size: 30px;
   color: #e0fff6;
-  padding: 20px 30px 20px 90px;
+  padding: 15px 30px 15px 10px;
   font-weight: 500;
 }/*# sourceMappingURL=style.css.map */
