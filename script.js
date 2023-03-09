@@ -2,8 +2,8 @@ const palettes = document.querySelector(".palettes");
 const refreshBtn = document.querySelector(".generate");
 const maxPalettes = 5;
 const generatePalette = () => {
+    palettes.innerHTML = ""; //clearing the container
     for (i = 0; i< maxPalettes ; i++) {
-
         //generating a random Hex color code 
         let randomHex = Math.floor(Math.random() * 0xffffff).toString(16);
         randomHex = `#${randomHex.padStart(6,"0")}`;
@@ -17,5 +17,6 @@ const generatePalette = () => {
     }
 
 }
+generatePalette();
 
 refreshBtn.addEventListener("click", generatePalette);
