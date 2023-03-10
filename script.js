@@ -24,9 +24,13 @@ generatePalette();
 
 const copyColor = (elem, hexVal) => {
     const colorElement = elem.querySelector(".hex-value");
+    // Copying the hex value, updating the text to copied,
+    // and changing text back to original hex value after I second 
     navigator.clipboard.writeText(hexVal).then( () => {
         colorElement.innerText = "copied";
-    })
+        setTimeout( () => colorElement.innerText = hexVal,600 )
+    }).catch( () => alert("Failed to copy the color code!"));
+            //showing alert if color can't be copied
 }
 
 refreshBtn.addEventListener("click", generatePalette);
